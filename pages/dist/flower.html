@@ -15,12 +15,21 @@
 <h1>Maua</h1>
 <div class="topnav">
 <a href="../index.html" class="active">Welcome</a>
-<a href="#">Log in</a>
+<a href="#"onclick="document.getElementById('showmodal').style.display='block'">Log in</a>
 <a href="#"onclick="document.getElementById('showmodal').style.display='block'">Sign up</a>
 <a href="#"><i class="fa fa-shopping-cart" style="font-size:10px"></i>My cart</a>
 </div>
- </header> 
- <!--<div id="showmodal" class="signupmodal">
+<div id="showmodal" class="loginmodal">
+    <div class="signupcard">
+    <span id="close" onclick="document.getElementById('showmodal').style.display='none'" class="close" title="close Modal">&times;</span>
+    <h1>Log in Form</h1>
+    <label> <b> Email:</b></label>
+    <input class="inputsignup" type="text" placeholder="Enter your email" name="ename" />
+    <label> <b> Password:</b></label>
+    <input class="inputsignup" type="password" placeholder="Enter your Password" name="password" />
+    <br><br><button href="#" type="submit" class="signupbutton"> Log in</button>
+    </div>
+<div id="showmodal" class="signupmodal">
     <div class="signupcard">
     <span id="close" onclick="document.getElementById('showmodal').style.display='none'" class="close" title="close Modal">&times;</span>
     <h1>SignUp Form</h1>
@@ -33,10 +42,10 @@
     <label> <b> Password:</b></label>
     <input class="inputsignup" type="password" placeholder="Enter your Password" name="password" />
     <label> <b> Confirm Password:</b></label>
-    <input class="inputsignup" type="password" placeholder="Confirm your Password" name="password" />
-    <button type="submit" class="signupbutton"> SignUp</button> <br/>
-    </div>-->
-
+    <input class="inputsignup" type="password" placeholder="Confirm your Password" name="password" /><br>
+    <br><br><button href="#" type="submit" class="signupbutton"> SignUp</button>
+    </div>
+ </header> 
 <div class="container">
 <div class="cardcontainer">
  <div class="card-1">
@@ -125,10 +134,11 @@
          <label>
          <input type="checkbox"  name="select">
          Select Black Roses
-     </label>
- 
+     </label> 
 </div>
-    
+<div class="button-1">
+    <button href="#" class="btn"><a href="./bouquet.html">Select the Bouquet</a> </button>
+</div>  
 </div>
 
  </div> 

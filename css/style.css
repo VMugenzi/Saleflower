@@ -61,6 +61,14 @@ button:hover{
 }
 .signupmodal{
     width:100%;
+    height:60vh;
+    background:rgba(0, 0, 0, 0.8);
+    position:fixed;
+    display:none;
+    margin-top: -100px;
+}
+.loginmodal{
+    width:100%;
     height:120vh;
     background:rgba(0, 0, 0, 0.8);
     position:fixed;
@@ -88,6 +96,8 @@ button:hover{
 .signupbutton{
     width:90%;
     height:50px;
+    margin-top: -90px;
+    margin-left: -20px;
     background:#AB0B0B;
     cursor:pointer;
 }
